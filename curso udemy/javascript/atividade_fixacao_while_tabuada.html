@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var x = 1
+        var y = 1
+
+        while(x <= 10){
+            document.write('<h1>Tabuada do ' + x + '</h1>')
+            //console.log(y)
+            y=1//reseta o valor do y para um a cada execução do while do x <= 10
+            console.log('agora x')
+            console.log(x)
+            while (y <= 10){
+                document.write(x + ' x ' + y +' = '+ x*y + '<br/>')
+                console.log('agora y')
+                console.log(y)
+                y++
+            }
+            x++
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

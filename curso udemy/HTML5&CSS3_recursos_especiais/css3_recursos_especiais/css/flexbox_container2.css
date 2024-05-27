@@ -1,0 +1,169 @@
+#conteudo {
+    background: #dcdcdc;
+    width: 600px;
+    height: 600px;
+    display: flex;
+
+    /*Valores flex-direction*/
+    /*row | row-reverse | column | column-reverse*/
+    /*define a direção dos containers filhos*/
+    flex-direction: row;
+
+    /*Valores flex-wrap*/
+    /*nowrap | wrap | wrap-reverse*/
+    /*quebra os containers filhos para que se adequem ao 
+    tamanho definido para o container pai*/
+    flex-wrap: nowrap;
+
+    /*Valores justify-content*/
+    /*flex-start | flex-end | center | space-between | space-around*/
+    /*alinha horizontalmente*/
+    justify-content: space-around;
+
+    /*Valores align-itens*/
+    /*stretch(esticado) | center | flex-start | flex-end | 
+    baseline(deixa os textos no mesmo alinhamento vertical)*/
+
+    /*alinhamento vertical*/
+    align-items: baseline;
+
+}
+
+.item {
+    /*width: 300px;*/
+    height: 100px;
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+
+    /*Define a proporção de espaço ocupado por um container filho
+     no container pai*/
+     /*Quanto maior o número mais o filho expande*/
+    flex-grow:0;
+
+    /*mesmo que o flex grow, mas quanto maior o número menor o filho
+    quando diminui-se a tela */
+    flex-shrink: 1;
+
+    /*Define o tamanho inicial do flex item antes da distribuição do espaço restante(width)*/
+    flex-basis: 100px;
+}
+
+/*.item1 {
+    /*flex-grow: 1;*/
+    /* flex-shrink: 3;*/
+/*}*/
+
+/*.item2 {
+    /*flex-grow: 2;*/
+    /*flex-shrink: 5;*/
+/*}*/
+/*
+.ordem1 {
+    order: 1;
+}
+.ordem2 {
+    order: 2;
+}
+.ordem3 {
+    order: 3;
+}
+.ordem4 {
+    order: 4;
+}
+*/
+
+
+
+
+
+/*autoprefixer.github.io*/
+
+/*
+#conteudo {
+    background: #dcdcdc;
+    width: 600px;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    Valores flex-direction
+    row | row-reverse | column | column-reverse
+    define a direção dos containers filhos
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    Valores flex-wrap
+    nowrap | wrap | wrap-reverse
+    quebra os containers filhos para que se adequem ao 
+    tamanho definido para o container pai
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+    Valores justify-content
+    flex-start | flex-end | center | space-between | space-around
+    alinha horizontalmente
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+
+    Valores align-itens
+    stretch(esticado) | center | flex-start | flex-end | 
+    baseline(deixa os textos no mesmo alinhamento vertical)
+
+    alinhamento vertical
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+
+}
+
+.item {
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+
+    Define a proporção de espaço ocupado por um container filho
+     no container pai
+     Quanto maior o número mais o filho expande
+    -webkit-box-flex:0;
+        -ms-flex-positive:0;
+            flex-grow:0;
+
+    mesmo que o flex grow, mas quanto maior o número menor o filho
+    quando diminui-se a tela 
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+
+    Define o tamanho inicial do flex item antes da distribuição do espaço restante(width)
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+}
+
+.item1 {
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+
+.item2 {
+    flex-grow: 2;
+    flex-shrink: 5;
+}
+
+.ordem1 {
+    order: 1;
+}
+.ordem2 {
+    order: 2;
+}
+.ordem3 {
+    order: 3;
+}
+.ordem4 {
+    order: 4;
+}
+*/

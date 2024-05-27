@@ -1,0 +1,29 @@
+/*Herança e especificidade*/
+
+/*#pagina p{
+    color: red !important;
+}
+/*Dois seletores iguais = sempre o último que será aplicado*/
+/*a não ser que use a tag !important*/
+/*important -> define que o atributo é mais importante que os outros*/
+
+/*Se um seletor for mais específico que outro a regra mais específica será aplicada (terá procedência sobre regras mais gerais) */
+#pagina p{
+    color: blue;
+}
+
+* {
+    color: blue;
+}
+
+h2{ /*3*/
+    color: red;
+}
+
+h2.verde{ /*2*/
+    color: green;
+}
+
+h2#amarelo{ /*1*/
+    color: yellow;
+}

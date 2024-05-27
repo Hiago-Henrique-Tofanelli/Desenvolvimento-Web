@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        class Animal {
+            constructor(cor, tamanho, peso){
+                //this referencia o atributo da classe
+                //parametros do método são apenas do escopo
+                this.cor = cor
+                this.tamanho = tamanho
+                this.peso = peso
+            }
+
+            dormir(){
+                console.log('dormir')
+            }
+        }
+
+        class Passaro extends Animal {
+            constructor(bico, cor, tamanho, peso){
+                super(cor, tamanho, peso)
+                this.bico = bico 
+            }
+
+            voar(){
+                console.log('voar')
+            }
+        }
+
+        class Papagaio extends Passaro {
+            constructor(sabeFalar, cor, tamanho, peso){
+                super('Médio', cor, tamanho, peso)
+                this.sabeFalar = sabeFalar
+            }
+
+            falar(){
+                console.log('falar')
+            }
+        }
+
+        let papagaio = new Papagaio(true, 'Verde', 25, 350)
+        let passaro = new Passaro('Médio','Branco', 25, 200)
+        console.log(papagaio)
+        console.log(passaro)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

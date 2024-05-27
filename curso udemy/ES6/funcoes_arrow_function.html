@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*let quadrado = function(x = 5) {
+            return x * x
+        }*/
+
+        /*let quadrado2 = (x) =>{
+            return x * x
+        }*/
+
+        //com apenas um parâmetro não precisamos de ()
+        /*let quadrado2 = x =>{
+            return x * x
+        }*/
+
+        //return implícito -> funciona apenas com uma
+        //única instrução de retorno
+        let quadrado2 = x => x * x
+
+        document.write(quadrado2(3))
+
+        /*let parOuImpar = function(numero) {
+
+            if(numero % 2 === 0) {
+                return 'par'
+            } else {
+                return 'ímpar'
+            }
+
+        }*/
+
+        /*
+        let parOuImpar = numero => {
+            if(numero % 2 === 0) {
+                return '<br/> par'
+            } else {
+                return '<br/> ímpar'
+            }
+        }
+        */
+
+        let parOuImpar = numero => numero % 2 === 0 ? '<br/> par' : '<br/> ímpar' 
+
+        document.write(parOuImpar(7))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

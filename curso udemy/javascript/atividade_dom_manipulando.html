@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function modificaFundo(corDeFundo){
+            document.getElementById('campo').style.background = "yellow"
+        }
+        function verificaCondicoes(corDeFundo){
+            var quantidade_de_letras = document.getElementById('campo').value
+
+            if(quantidade_de_letras.length < 3){
+                document.getElementById('campo').style.background ='red'
+            }else {
+                document.getElementById('campo').style.background ='green'
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="campo" onclick="modificaFundo()" onblur="verificaCondicoes()">
+</body>
+</html>

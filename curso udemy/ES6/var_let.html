@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //3 escopos: global, função e bloco
+        //dentro do escopo de bloco sofre elevação para 
+        //o global ou para a função
+
+        //variáveis em escopo de função não sofrem elevação
+
+        //let preserva o escopo onde a variável foi criada
+        /*var serie = 'Friends'//global
+
+        function x(){
+            var serie = 'Game Of Thrones'
+            console.log(serie)
+
+            if(true){
+                console.log('Bloco dentro da função: ' + serie)
+            }
+        }
+
+        x()
+        if(true){
+            console.log(serie)
+        }*/
+        var serie = 'Friends'
+
+        {
+            var serie = 'The Walking Dead'
+            console.log('Dentro do bloco: ' + serie)
+        }
+
+        console.log('Fora do bloco: '+serie)
+
+
+        let serie2 = 'Friends'
+
+        {
+            let serie2 = 'The Walking Dead'
+            console.log('Dentro do bloco: ' + serie2)
+        }
+
+        console.log('Fora do bloco: '+ serie2)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

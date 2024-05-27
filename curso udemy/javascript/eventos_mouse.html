@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function acao() {
+            alert('Evento disparado')
+        }
+
+        function func1(){
+            alert('Elemento foi clicado')
+        }
+
+        function func2(){
+            alert('O cursor do mouse deixou a região do elemento')
+        }
+
+    </script>
+</head>
+<body>
+    <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;">
+
+    </div>
+    <br>
+
+    <div ondblclick="acao()" style="background: #ccc; height: 150px; width: 150px;">
+    </div>
+    <br>
+    <!-- onmouseup dispara quando soltamos o click do mouse -->
+    <div  onmouseup="acao()" style="background: #ccc; height: 150px; width: 150px;">
+    </div>
+    <br>
+    <!-- onmouuseover - quando passamos o mouse por cima -->
+    <div onmouseover="acao()" style="background: #ccc; height: 150px; width: 150px;">
+    </div>
+    <br>
+    <!-- onmouseout - quando tiramos o mouse de cima do elemento -->
+    <div onmouseout="acao()" style="background: #ccc; height: 150px; width: 150px;">
+    </div>
+    <br>
+
+    <div onclick="func1()" onmouseout="func2()" style="background: #ccc; height: 150px; width: 150px;">
+    </div>
+</body>
+</html>

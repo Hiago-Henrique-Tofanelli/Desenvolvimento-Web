@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let nome = 'Hiago'
+        let idade = 21
+        let sexo = 'Mascculino'
+        let profissao = 'Programador'
+
+        let objeto = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+            exibirResumo: function(){
+                console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é, ${this.profissao}`)
+            }
+        }
+        
+        console.log(objeto)
+        objeto.exibirResumo()
+    </script>
+</head>
+<body>
+        <input id="nome" type="text">
+   
+    <script>
+        console.log(nome = document.getElementById('nome').value)
+        
+    </script>
+</body>
+</html>
