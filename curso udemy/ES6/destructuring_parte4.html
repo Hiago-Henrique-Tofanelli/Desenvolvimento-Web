@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //array
+        let arr = [10, 20, 30, 40]
+
+        let [ a, ...resto ] = arr
+
+        console.log(a, resto)
+
+        let obj = {
+            a1: 10, b1:20, c1:30, d1:40
+        }
+
+        let { a1, ...z} = obj
+
+        console.log(a1)
+        console.log(z)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

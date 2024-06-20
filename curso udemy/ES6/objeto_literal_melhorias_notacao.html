@@ -23,14 +23,23 @@
         
         console.log(objeto)
         objeto.exibirResumo()
+
+        let objeto2 = {
+            nome, //nome = nome variável / valor = valor variável
+            idade,
+            sexo,
+            profissao,
+            exibirResumo(){
+                console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é, ${this.profissao}`)
+            }
+        }
+
+        console.log(objeto2)
+        objeto.exibirResumo()
+
     </script>
 </head>
 <body>
-        <input id="nome" type="text">
-   
-    <script>
-        console.log(nome = document.getElementById('nome').value)
-        
-    </script>
+
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let produto = {
+             descricao: 'Notebook',
+             preco: 1800,
+             detalhes:{
+                fabricante: 'abc', 
+                modelo: 'xyz'
+             }
+        }
+
+        //composição -> objetos como atributos de outros objetos
+        //é um 
+        //tem um -> quando o objeto é atributo do outro
+
+
+        //token
+        //aray => []
+        //objeto => {}
+        //let{ descricao, preco } = produto
+        //let{ descricao: d, preco: p, desconto } = produto
+        //let{ descricao: d, preco: p = 1000, desconto = 5 } = produto
+
+        let{ detalhes: { fabricante: f = 'não informado', modelo: m } } = produto
+
+        console.log(f, m)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
