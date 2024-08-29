@@ -27,7 +27,7 @@ Sinta-se à vontade para explorar os projetos e códigos! Se você encontrar alg
 Se você quiser discutir algum projeto ou colaborar em algo, entre em contato:
 
 - Email: [hiagotofanelli@hotmail.com](mailto:hiagotofanelli@hotmail.com)
-- LinkedIn: [Hiago Henrique Tofanelli]([https://www.linkedin.com/in/seu-perfil/](https://www.linkedin.com/in/hiago-henrique-tofanelli-876ba121b/))
+- LinkedIn: [Hiago Henrique Tofanelli](https://www.linkedin.com/in/hiago-henrique-tofanelli-876ba121b/)
 - Portfólio: [https://hiagotofanelli.vercel.app/](https://hiagotofanelli.vercel.app/)
 
 ---
